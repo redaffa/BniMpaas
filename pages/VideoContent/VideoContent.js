@@ -1,3 +1,5 @@
+import { GOOGLE_API_KEY } from "/environmentSettings";
+
 const app = getApp()
 Page({
   data: {
@@ -6,6 +8,7 @@ Page({
     paginationLoading:false
   },
   async onLoad() {
+    console.log(`${GOOGLE_API_KEY} ada g ya`)
     my.showLoading({
       content:"Loading"
     })
@@ -16,7 +19,7 @@ Page({
  async fetchYoutubeVideo(){
     try {
        my.request({
-        url: 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=Burger%20King%20So%20Good&key=AIzaSyC7lAUlWatKXH3v9byjDdh95A_Yu4ysSbI&maxResults='+ this.data.maxResult,
+        url: `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=Burger%20King%20So%20Good&key=${GOOGLE_API_KEY}&maxResults=` + this.data.maxResult,
         method: 'GET',
         success: (result) => {
           this.setData({
