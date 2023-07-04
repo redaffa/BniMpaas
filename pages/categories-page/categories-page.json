@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "category-card":"/pages/Components/category-card/category-card"
+  },
+  "defaultTitle": "",
+  "pullRefresh": true,
+  "allowsBounceVertical":"YES"
+}

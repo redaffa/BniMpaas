@@ -1,0 +1,136 @@
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.category-title-container{
+  min-width: 93%;
+  min-height: 50px;
+  background-color: #ffab00;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: x-large;
+  border-radius: 10px;
+  font-family: "Flame";
+}
+.menu-outer-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.menu-container{
+  width:100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  padding: 20px;
+}
+.menu-card{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px ;
+  border-style: ridge;
+  border-radius: 20px;
+}
+.image-card{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  /* background-color: gray; */
+  background-color: #ffab00;
+
+  border-radius: 20px 20px 0px 0px;
+}
+.image-menu{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+.price-card{
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 20px;
+  font-family: "Flame";
+  font-size:medium;
+}
+.title-text{
+  font-size: xx-large;
+  color: #571f13;
+  font-weight: bold;
+  font-family: "Flame";
+}
+.empty-notification{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size:larger;
+  font-family: "Flame";
+}
+.box-bottom{
+  width: 90%;
+  height: 600px;
+  padding: 20px;
+  border-radius: 20px 20px 0px 0px;
+}
+.pop-up-image-card{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/image/HD-wallpaper-burger-king-reveals-new-visual-identity-in-its-first-rebranding-in-over-20-years-burger-king-logo.jpg");
+  background-size: contain;
+  border-radius: 15px;
+}
+.pop-up-text-card{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.pop-up-image{
+  width: 100%;
+  height: 250px;
+  opacity: 100%;
+}
+.pop-up-item-name{
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Flame";
+  margin-top: 10px;
+}
+.pop-up-item-description{
+  font-size:medium;
+  font-family: "Flame";
+  font-weight: 600;
+  text-align: justify;
+}
+
+.pop-up-item-price{
+  font-weight: 400;
+  font-family: "Flame";
+  font-size: medium;
+}

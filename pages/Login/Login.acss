@@ -1,0 +1,28 @@
+.image-card{
+  display: flex;
+  justify-content: center;
+}
+.form-login-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+}
+.form-input{
+  width: 300px;
+  height: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.button-login{
+  margin-top: 70px;
+  border-radius: 20px;
+}
+.image-logo{
+  width: 200px;
+  height: 200px;
+}

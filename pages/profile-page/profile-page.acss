@@ -1,0 +1,67 @@
+.profile-page-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-card{
+  margin-top: 80px;
+  width: 85%;
+  height: 160px;
+  background-color: #ffead8;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+.profile-image-card{
+  width: 35%;
+  height: 100%;
+}
+.profile-image{
+  width: 100%;
+  height: 100%;
+}
+.profile-identity-container{
+  width:65%;
+  height: 100%;
+  color: #904c23;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Flame";
+}
+.profile-number{
+  font-size: 23px;
+}
+.profile-list-container{
+  /* background-color: blue; */
+  width: 100%;
+  height: 70px;
+}
+.profile-list-card{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Flame";
+}
+.angle-bracket-image{
+  width: 10%;
+  height: 40%;
+  background-color: rgb(227, 145, 13);
+  -webkit-mask: url("/image/angle-brackets.svg") no-repeat center;
+  mask: url("/image/angle-brackets.svg") no-repeat center;
+}
+
+.profile-list-border-bottom{
+  border-bottom: 1px solid #b3afaf;
+}
+.profile-list{
+  margin-left: 10px;
+}

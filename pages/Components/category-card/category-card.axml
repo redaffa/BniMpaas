@@ -1,0 +1,18 @@
+<view a:if="{{ !fetchCategoriesLoading }}" class="container">
+  <view
+    a:for="{{ burgerCategoriesArray }}"
+    a:for-item="category"
+    class="categories-container"
+    onTap="onChangeUrl"
+    data-id="{{category.id}}"
+    data-name="{{category.name}}"
+  >
+    <view class="categories-image-container">
+      <image class="categories-image" mode="aspectFit" src="{{category.imgUrl}}" />
+    </view>
+    <view class="categories-name">
+      <text>{{category.name}}</text>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,9 @@
+<view class="section-menu-selection-container">
+  <view class="menu-container" a:for="{{ listOfHomeMenus}}" onTap="onGoTo" data-name="{{item.name}}">
+    <image class="menu-image" mode="aspectFit" src="{{item.img}}" />
+    <text>
+      {{item.name}}
+    </text>
+  </view>
+
+</view>

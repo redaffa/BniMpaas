@@ -1,0 +1,52 @@
+{
+  "subPackageBuildType": "shared",
+  "pages": [
+    "pages/splash-screen/splash-screen", 
+    "pages/tabBar/Home/Home",
+    "pages/categories-page/categories-page",
+    "pages/menus-page/menus-page",
+    "pages/Login/Login"
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  },
+  "subPackages": [
+    {
+      "root": "pages",
+      "pages": [
+        "categories-page/categories-page",
+        "Webview/Webview",
+        "VideoContent/VideoContent",
+        "TestState/TestState",
+        "profile-page/profile-page",
+        "splash-screen/splash-screen",
+        "term-of-condition-page/term-of-condition-page"
+      ]
+    }
+  ],
+  "tabBar": {
+    "textColor": "##2d2d2d",
+    "selectedColor": "#89685a",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/tabBar/Home/Home",
+        "name": "Home",
+        "icon": "image/icon_component.png",
+        "activeIcon": "image/icon_component_HL.png"
+      },
+      {
+        "pagePath": "pages/VideoContent/VideoContent",
+        "name": "Video",
+        "icon": "image/video.png",
+        "activeIcon": "image/video_active.png"
+      },
+      {
+        "pagePath": "pages/profile-page/profile-page",
+        "name": "Profile",
+        "icon": "image/user_icon.png",
+        "activeIcon": "image/user_icon_active.png"
+      }
+    ]
+  }
+}

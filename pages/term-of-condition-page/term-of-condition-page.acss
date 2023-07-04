@@ -1,0 +1,59 @@
+.term-of-condition-container{
+  width: 100%;
+}
+.tos-title-container{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+.tos-title{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(132,176,228);
+  font-weight: bold;
+}
+.tos-title-image{
+  width: 30%;
+  height: 100px;
+}
+.tos-list-container{
+  width: 89%;
+  height: 89%;
+  border-top: 1px solid;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 10px;
+}
+.tos-list-card{
+  width: 100%;
+  min-height: 100px;
+}
+.tos-list-title{
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  color: rgb(132,176,228);
+}
+.tos-list-content{
+  margin-top: 10px;
+}
+.tos-button{
+  width: 100px;
+  border-radius: 20px;
+}
+.agreement-container{
+  width:100%;
+  height:100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}

@@ -1,0 +1,18 @@
+<view class="page">
+
+  <view class="video-container" a:for="{{ listOfYoutubeVideos }}" a:for-item="video" onTap="goToWebview" data-link="{{video.id.videoId}}">
+    <view class="thumbnail-card">
+      <image class="thumbnail-image" mode="aspectFit" src="{{video.snippet.thumbnails.high.url}}" />
+      <image class="play-button-image" mode="aspectFit" src="/image/playbutton-removebg-preview.png" />
+    </view>
+    <view class="title-card">
+        <text class="title">{{video.snippet.title}}</text>
+        <view class="channel-name">
+          <text>{{video.snippet.channelTitle}}</text>
+        </view>
+    </view>
+  </view>
+  <view a:if="{{ paginationLoading }}">
+    Loading . . . . . . 
+  </view>
+</view>

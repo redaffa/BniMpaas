@@ -1,0 +1,37 @@
+<text class="title-text">Menu Selection</text>
+<view a:if="{{ menuLoading }}">
+  Loading.......
+</view>
+<view a:if="{{ listOfMenusArray.length === 0 && !menuLoading}}" class="empty-notification">
+    <image mode="scaleToFill" src="/image/sorry-removebg-preview.png" />
+  <text>Menu is not available</text>
+</view>
+<view class="container" a:if="{{ listOfMenusArray.length > 0 }}">
+  <view class="category-title-container">
+    <text>{{categoryTitle}}</text>
+  </view>
+  <view class="menu-outer-container">
+    <view class="menu-container">
+      <menu-card listOfMenusArray="{{listOfMenusArray}}" onHandlePopUpOpen="onHandlePopUpOpen"/>
+    </view>
+  </view>
+</view>
+
+
+<popup position="bottom" animation visible="{{basicVisible}}"
+onClose="handlePopupClose">
+  <view class="box-bottom">
+    <view class="pop-up-image-card">
+      <image class="pop-up-image" mode="aspectFit" src="{{burgerMenu.imgUrl}}" />
+    </view>
+    <view class="pop-up-text-card">
+      <text class="pop-up-item-name">{{burgerMenu.name}}</text>
+      <text class="pop-up-item-description">{{burgerMenu.description}}</text>
+      <text class="pop-up-item-price">Rp.{{burgerMenu.price}}</text>
+      <view style="display:flex;justify-content:center;width:100%;height:70px;">
+        <button  type="primary" style="width:200px;height:50px;border-radius:20px;" onTap="goToWebview" data-link="{{burgerMenu.webUrl}}">ORDER</button>
+      </view>
+
+    </view>
+  </view>
+</popup>

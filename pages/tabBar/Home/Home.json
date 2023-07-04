@@ -1,0 +1,12 @@
+{
+  "transparentTitle": "auto",
+  "defaultTitle": "",
+  "titleBarColor": "#262833",
+  "showTitleLoading": "NO",
+  "usingComponents": {
+    "menu-selection-card":"/pages/Components/home-selection-menu-card/home-selection-menu-card"
+  },
+  "pullRefresh": true,
+  "allowsBounceVertical":"YES"
+
+}

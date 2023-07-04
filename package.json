@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "antd-mini": "^1.9.2",
+    "herculex": "^0.2.16-alpha.3"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "form-input": "antd-mini/es/Form/FormInput/index",
+    "button": "antd-mini/es/Button/index"
+  },
+  "defaultTitle": "Login"
+}

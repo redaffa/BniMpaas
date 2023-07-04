@@ -1,0 +1,5 @@
+<view class="splash-screen-container">
+  <view class="image-card">
+    <image class="splash-logo" src="/image/splash-screen.png" />
+  </view>
+</view>

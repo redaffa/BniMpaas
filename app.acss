@@ -1,0 +1,11 @@
+page {
+  background: #f7f7f7;
+}
+.page{
+  font-family: "Flame","Cooper Black",Helvetica;
+}
+
+@font-face {
+  font-family: "Flame";
+  src: url("fonts/FlameRegular.otf");
+}

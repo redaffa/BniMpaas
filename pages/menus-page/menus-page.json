@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "popup": "antd-mini/es/Popup/index",
+    "menu-card":"/pages/Components/menu-card/menu-card"
+  },
+  "defaultTitle": ""
+}

@@ -1,0 +1,9 @@
+<view class="menu-card" a:for="{{ listOfMenusArray }}" a:for-item="menu" onTap="onHandlePopUpOpen" data-menu="{{menu}}">
+  <view class="image-card">
+    <image class="image-menu" mode="scaleToFill" src="{{menu.imgUrl}}" />
+  </view>
+  <view class="price-card">
+    <text>{{menu.name}}</text>
+    <text>Rp{{menu.price}}</text>
+  </view>
+</view>

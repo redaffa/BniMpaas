@@ -1,0 +1,12 @@
+<pull-down-refresh onPullDownRefresh="refreshPage">
+  <view >
+    <view class="title-container">
+      <text class="title-menu">Category Selection</text>
+  
+    </view>
+    <view a:if="{{ fetchCategoriesLoading }}">
+      <text>LOADING.......</text>
+    </view>
+    <category-card burgerCategoriesArray="{{ burgerCategoriesArray}}" onChangeUrl="onChangeUrl" />
+  </view>
+</pull-down-refresh>

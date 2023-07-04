@@ -1,0 +1,33 @@
+<view class="term-of-condition-container">
+  <view class="tos-title-container">
+    <image class="tos-title-image" src="https://images.squarespace-cdn.com/content/v1/5aab7f4eaa49a16d4e70c419/1525953733429-JULINTBMAATWJW8M8FJ9/Paper+icon+blue.png" />
+    <view class="tos-title">
+      <text>Term of Service</text>
+    </view>
+  </view>
+  <view class="tos-list-container">
+    <view>
+      Please read these term of service, carefully before using our mobile app operated by us
+    </view>
+    <scroll-view scroll-y="{{true}}" style="height:400px">
+      <view a:for="{{ tosContent }}" a:for-index="index" a:for-item="tos" class="tos-list-card">
+
+        <view class="tos-list-title">
+          <text>{{index + 1}}.</text>
+          <text>{{tos.title}}</text>
+        </view>
+        <view a:for="{{ tos.content }}" a:for-item="content" class="tos-list-content">
+          {{content}}
+        </view>
+
+      </view>
+    </scroll-view>
+  </view>
+  <view class="agreement-container">
+    <view>
+      <checkbox value="test" onChange="onChangeCheckBox" data-value="agree" />
+      <text>I Agree with Term of Conditions</text>
+    </view>
+    <button onTap="onAcceptTos" class="tos-button" size="default" type="primary" disabled={{ !agree }}>Submit</button>
+  </view>
+</view>

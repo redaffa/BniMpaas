@@ -1,0 +1,34 @@
+<view>
+  <view>
+    <view class="image-card">
+      <image class="image-logo" mode="aspectFit" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Burger_King_logo_%281999%29.svg/2024px-Burger_King_logo_%281999%29.svg.png" />
+    </view>
+    <view class="form-login-card">
+      <form onSubmit="formLoginHandler">
+        <view class="input-container">
+          <label for="username">Username</label>
+          <input
+          class="form-input"
+          id="username"
+          label="Email"
+          name="email"
+          placeholder="Email"
+        />
+        </view>
+      <view class="input-container">
+        <label for="password">Password</label>
+        <input
+          class="form-input"
+          label="Password"
+          name="password"
+          placeholder="password"
+          password
+        />
+      </view>
+      <button form-type="submit" class="button-login" type="primary" onTap="handleTap">
+        Login
+      </button>
+      </form>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view>
+  <swiper autoplay>
+    <block a:for="{{burgerPromotionImage}}">
+      <swiper-item class="swiper-container">
+        <image class="img_container" mode="scaleToFill" src="{{item.imgUrl}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="home">
+  <view class="headers_container">
+    <view class="headers-profile-name">
+      <text>
+        Hi King {{name}}!
+      </text>
+    </view>
+    <view class="profile-icon">
+      <image class="profile-icon-image" onTap="onGoTo" data-profile="profile" mode="aspectFit" src="/image/download-profile-user-round-orange-icon-symbol-png-11639594360ksf6tlhukf-removebg-preview.png" />
+    </view>
+  </view>
+  <menu-selection-card listOfHomeMenus="{{listOfHomeMenus}}" onGoTo="onGoTo"/>
+</view>

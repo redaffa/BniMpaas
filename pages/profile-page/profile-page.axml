@@ -1,0 +1,24 @@
+<view class="profile-page-container">
+  <view class="profile-card">
+    <view class="profile-image-card">
+      <image class="profile-image" mode="aspectFit"  src="/image/bkProfile__1_-removebg-preview.png" />
+    </view>
+    <view class="profile-identity-container">
+      <text class="profile-name">
+        Daffa
+      </text>
+      <text class="profile-number">
+        +6232132131
+      </text>
+    </view>
+  </view>
+  <view class="profile-list-container {{index !== profileList.length - 1 ? 'profile-list-border-bottom' : '' }}" a:for="{{ profileList }}" a:for-item="profile" a:for-index="index" onTap="onProfileListTapped" data-name="{{profile.name}}">
+    <view class="profile-list-card">
+      <text class="profile-list">{{profile.name}}</text>
+      <view class="angle-bracket-image" a:if="{{ index !== profileList.length - 1 }}">
+      
+      </view>
+    </view>
+  </view>
+  
+</view>
